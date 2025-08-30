@@ -1,0 +1,123 @@
+/* static/style.css */
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+form {
+    margin-bottom: 30px;
+}
+
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#task-list {
+    margin-top: 20px;
+}
+
+.task-item {
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border-left: 5px solid #3498db;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-item.completed {
+    border-left-color: #2ecc71;
+    opacity: 0.7;
+}
+
+.task-item.completed .task-content h3 {
+    text-decoration: line-through;
+    color: #7f8c8d;
+}
+
+.task-content h3 {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.task-content p {
+    margin: 5px 0 0;
+    color: #555;
+}
+
+.task-content .category {
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #2980b9;
+    background-color: #e2f1fb;
+    padding: 2px 6px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.task-actions button {
+    margin-left: 10px;
+    font-size: 14px;
+    padding: 8px 12px;
+}
+
+.complete-btn {
+    background-color: #2ecc71;
+}
+
+.complete-btn:hover {
+    background-color: #27ae60;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
